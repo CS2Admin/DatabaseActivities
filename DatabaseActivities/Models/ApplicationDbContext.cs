@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatabaseActivities.Models.Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -17,6 +18,7 @@ namespace DatabaseActivities.Models
         {
             return new ApplicationDbContext();
         }
+        public DbSet<Student> Students { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
