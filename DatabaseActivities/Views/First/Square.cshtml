@@ -1,0 +1,14 @@
+﻿@model double
+@{
+    ViewBag.Title = "Square";
+}
+
+<h2>Square</h2>
+
+<div>
+    <form action="~/First/SquareNumber" method="post">
+        <input name="inputNumber" type="number" step="any" />
+        <input name="submit" type="submit" />
+    </form>
+    <p>@Model</p>
+</div>
